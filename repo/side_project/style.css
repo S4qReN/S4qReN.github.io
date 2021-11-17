@@ -1,0 +1,33 @@
+body
+{
+	!margin:0;
+	background-color:#1f1f1f;
+}
+.header
+{
+	!margin:0;
+	height:70px;
+	background-color:#0f0f0f;
+	color:#ffffff;
+	width:100%;
+}
+.logo
+{
+	padding:10px;
+	font-size:40px;
+	background-color:#0f0f0f;
+	color:#ffffff;
+	float:left;
+	height:50px;
+}
+.logoimg
+{
+	height:50px;
+	width:50px;
+}
+.login
+{
+	float:right;
+	padding:20px;
+	width:400px;
+}
