@@ -1,86 +1,91 @@
-﻿<html lang="pl">
-
+<!doctype html>
+<html lang="pl">
 <head>
-
 <meta charset="utf-8">
-<title>Formularz</title>
-
+<title>SaqReN - Formularz</title>
+<style>
+.question
+{
+	float:left;
+	margin:30px;
+}
+</style>
 </head>
 
-<body>
-
-<body bgcolor="76E66E">
-
-<form enctype="text/plain" action="mailto:login@domena.kod?subject=Moja ankieta" method="post">
-	<input name="Imie"> Podaj swoje imię<br>
-	<p>Podaj swoją płeć:</p>
-	<input type="radio" name="Plec" value="Kobieta">Kobieta
-	<input type="radio" name="Plec" value="Mężczyzna">Mężczyzna<br><br>
-	<input name="data urodzenia"> Podaj swoją datę urodzenia<br>
-	
-	<p>Jakie masz hobby? (możesz zaznaczyć więcej możliwości)</p>
-	<input type="checkbox" name="hobby" value="Sport">Sport<br>
-	<input type="checkbox" name="hobby" value="Muzyka">Muzyka<br>
-	<input type="checkbox" name="hobby" value="Ksiazka">Książka<br>
-	<input type="checkbox" name="hobby" value="Kino">Kino<br>
-	<input type="checkbox" name="hobby" value="Gry komputerowe">Gry komputerowe<br>
-	<input name="hobby" >Inne (napisz jakie):<br>
-	
-	<p>Jakiej muzyki słuchasz? (możesz zaznaczyć więcej możliwości)</p>
-	<select id="muzyka" multiple="multiple" size="5">
-	<option value="Rock">Rock</option>
-	<option value="Pop">Pop</option>
-	<option value="Metal">Metal</option>
-	<option value="Techno">Techno</option>
-	<option value="Reggae">Reggae</option>
-	<option value="Disco">Disco</option>
-	</select>
-	<br><input name="muzyka" >Inna (podaj jaka):<br>
-	
-	<p>Jakie książki lubisz? (możesz zaznaczyć więcej możliwości)</p>
-	<input type="checkbox" name="ksiazka" value="Kryminal">Kryminał<br>
-	<input type="checkbox" name="ksiazka" value="Thriller">Thriller<br>
-	<input type="checkbox" name="ksiazka" value="Biografia">Biografia<br>
-	<input type="checkbox" name="ksiazka" value="Horror/dreszczowiec">Horror/dreszczowiec<br>
-	<input type="checkbox" name="ksiazka" value="Fantasy">Fantasy<br>
-	<input name="ksiazka" >Przykładowy tytuł<br>
-	
-	<p>Jakie filmy lubisz? (możesz zaznaczyć więcej możliwości)</p>
-	<input type="checkbox" name="film" value="Horror">Horror<br>
-	<input type="checkbox" name="film" value="Komedia">Komedia<br>
-	<input type="checkbox" name="film" value="Kryminal">Kryminal<br>
-	<input type="checkbox" name="film" value="Thriller">Thriller<br>
-	<input type="checkbox" name="film" value="Film akcji">Film akcji<br>
-	<input name="film" >Przykładowy tytuł<br>
-	
-	<p>Jaki sport uprawiasz? (możesz zaznaczyć więcej możliwości)</p>
-	<input type="checkbox" name="sport" value="pilka nozna">piłka nożna<br>
-	<input type="checkbox" name="sport" value="siatkowka">siatkówka<br>
-	<input type="checkbox" name="sport" value="kolarstwo">kolarstwo<br>
-	<input type="checkbox" name="sport" value="koszykowka">koszykówka<br>
-	<input type="checkbox" name="sport" value="pilka reczna">piłka ręczna<br>
-	<input name="sport" >Inny (napisz jaki):<br>
-	
-	<p>W jakie gry komputerowe grasz?</p>
-	<select id="gry" multiple="multiple" size="5">
-	<option value="LoL">LoL</option>
-	<option value="CS GO">CS GO</option>
-	<option value="DOTA2">DOTA2</option>
-	<option value="Call of Duty">Call of Duty</option>
-	<option value="Rocket League">Rocket League</option>
-	<option value="Rainbow Six">Rainbow Six</option>
-	</select>
-	<br><input name="gry" >Inne (podaj jakie):<br>
-	
-</form>
-
-<input type="submit" value="Wyślij" />
-
-<input type="reset" value="Wyczyść dane">
-
+<body style="background-color:#101010;color:#ffffff;">
+<form enctype="text/plain" action="mailto:login@domena.kod?subject=Moja_ankieta" method="post">
+	<div style="float:left;">
+		Twoje imię:<input name="Imie"><br/>
+		Płeć:<input type="radio" name="Plec" value="Kobieta">Kobieta
+		<input type="radio" name="Plec" value="Mężczyzna">Mężczyzna<br/><br/>
+		Data urodzenia:<input name="data urodzenia"><br/>
+	</div>
+	<div class="question">
+		Twoje hobby? (1 lub więcej odpowiedzi)<br/>
+		<input type="checkbox" name="hobby" value="Sport">Sport<br/>
+		<input type="checkbox" name="hobby" value="Muzyka">Muzyka<br/>
+		<input type="checkbox" name="hobby" value="Ksiazki">Książka<br/>
+		<input type="checkbox" name="hobby" value="Kino">Kino<br/>
+		<input type="checkbox" name="hobby" value="Gry komputerowe">Gry komputerowe<br>
+		Inne:<input name="hobby" ><br>
+	</div>
+	<div class="question">
+		Jakiej muzyki słuchasz? (1 lub więcej dopowiedzi)<br/>
+		<select id="muzyka" multiple="multiple" size="5">
+		<option value="Rock">Rock</option>
+		<option value="Pop">Pop</option>
+		<option value="Metal">Metal</option>
+		<option value="Techno">Techno</option>
+		<option value="Reggae">Reggae</option>
+		<option value="Disco">Disco</option>
+		</select><br>
+		Inna:<input name="muzyka" ><br>
+	</div>
+	<div class="question">
+		Jakie książki lubisz? (możesz zaznaczyć więcej możliwości)<br/>
+		<input type="checkbox" name="ksiazka" value="Kryminal">Kryminał<br/>
+		<input type="checkbox" name="ksiazka" value="Thriller">Thriller<br/>
+		<input type="checkbox" name="ksiazka" value="Biografia">Biografia<br/>
+		<input type="checkbox" name="ksiazka" value="Horror/dreszczowiec">Horror/dreszczowiec<br/>
+		<input type="checkbox" name="ksiazka" value="Fantasy">Fantasy<br/>
+		<input name="ksiazka" >Przykładowy tytuł<br/>
+	</div>
+	<div class="question">
+		Jakie filmy lubisz? (możesz zaznaczyć więcej możliwości)<br/>
+		<input type="checkbox" name="film" value="Horror">Horror<br/>
+		<input type="checkbox" name="film" value="Komedia">Komedia<br/>
+		<input type="checkbox" name="film" value="Kryminal">Kryminal<br/>
+			<input type="checkbox" name="film" value="Thriller">Thriller<br/>
+		<input type="checkbox" name="film" value="Film akcji">Film akcji<br/>
+		<input name="film" >Przykładowy tytuł<br>
+	</div>
+	<div class="question">
+		Jaki sport uprawiasz? (możesz zaznaczyć więcej możliwości)<br/>
+		<input type="checkbox" name="sport" value="pilka nozna">piłka nożna<br/>
+		<input type="checkbox" name="sport" value="siatkowka">siatkówka<br/>
+		<input type="checkbox" name="sport" value="kolarstwo">kolarstwo<br/>
+		<input type="checkbox" name="sport" value="koszykowka">koszykówka<br/>
+		<input type="checkbox" name="sport" value="pilka reczna">piłka ręczna<br/>
+		<input name="sport" >Inny (napisz jaki):<br/>
+	</div>
+	<div style="float:left;margin:30px;">
+		W jakie gry komputerowe grasz?<br/>
+		<select id="gry" multiple="multiple" size="5">
+		<option value="LoL">LoL</option>
+		<option value="CS GO">CS GO</option>
+		<option value="DOTA2">DOTA2</option>
+		<option value="Call of Duty">Call of Duty</option>
+		<option value="Rocket League">Rocket League</option>
+		<option value="Rainbow Six">Rainbow Six</option>
+		</select>
+		<br><input name="gry" >Inne (podaj jakie):<br/>
+	</div>
+	</form>
+</div>
+<div style="float:right;top-margin:40%;">
+	<input type="submit" value="Wyślij" />
+	<input type="reset" value="Wyczyść dane">
+</div>
 </form>
 </body>
-
-
 </html>
-
