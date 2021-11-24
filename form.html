@@ -1,9 +1,28 @@
-﻿<html lang="pl">
+<!doctype html>
+<html lang="pl">
 <head>
 <meta charset="utf-8">
 <title>Formularz</title>
 <style>
-
+body
+{
+	!important margin:0px;
+	background-color:#2f2f2f;
+	color:#ffffff;
+}
+.content
+{
+	background-color:#1f1f1f;
+	margin-left:25%;
+	margin-right:25%;
+	width:50%;
+	padding:35px;
+}
+.send
+{
+	float:right;
+	margin:30px;
+}
 </style>
 </head>
 
@@ -15,15 +34,15 @@
 	<input type="radio" name="Plec" value="Kobieta">Kobieta
 	<input type="radio" name="Plec" value="Mężczyzna">Mężczyzna
 <br/><br/>
-	Data urodzenia:<input name="data urodzenia"><br/>
+	Data urodzenia:<input name="data urodzenia"><br/><br/>
 	
 	Twoje hobby:<br/>
 	<input type="checkbox" name="hobby" value="Sport">Sport<br/>
 	<input type="checkbox" name="hobby" value="Muzyka">Muzyka<br/>
 	<input type="checkbox" name="hobby" value="Ksiazka">Książka<br/>
 	<input type="checkbox" name="hobby" value="Kino">Kino<br/>
-	<input type="checkbox" name="hobby" value="Gry komputerowe">Gry komputerowe<br/>
-	<input name="hobby">Inne:<br/>
+	<input type="checkbox" name="hobby" value="Gry komputerowe">Gry komputerowe<br/><br/>
+	Inne:<input name="hobby"><br/><br/>
 	
 	Ulubiony typ muzyki?:<br/>
 	<select id="muzyka" multiple="multiple" size="5">
@@ -33,32 +52,32 @@
 	<option value="Techno">Techno</option>
 	<option value="Reggae">Reggae</option>
 	<option value="Disco">Disco</option>
-	</select><br/>
-	Inny:<input name="muzyka">
+	</select><br/><br/>
+	Inny:<input name="muzyka"><br/><br/>
 	
-	Ulubiony typ książki?:
+	Ulubiony typ książki?:<br/>
 	<input type="checkbox" name="ksiazka" value="Kryminal"/>Kryminał<br/>
 	<input type="checkbox" name="ksiazka" value="Thriller"/>Thriller<br/>
 	<input type="checkbox" name="ksiazka" value="Dokumentalny"/>Biografia<br/>
 	<input type="checkbox" name="ksiazka" value="Horror"/>Horror/dreszczowiec<br/>
-	<input type="checkbox" name="ksiazka" value="Fantasy"/>Fantasy<br/>
-	<input name="ksiazka" >Przykładowy tytuł<br/>
+	<input type="checkbox" name="ksiazka" value="Fantasy"/>Fantasy<br/><br/>
+	Przykład:<input name="ksiazka" ><br/><br/>
 	
 	Ulubiona kategoria filmowa?:
 	<input type="checkbox" name="film" value="Horror"/>Horror<br/>
 	<input type="checkbox" name="film" value="Komedia"/>Komedia<br/>
 	<input type="checkbox" name="film" value="Kryminal"/>Kryminal<br/>
 	<input type="checkbox" name="film" value="Thriller"/>Thriller<br/>
-	<input type="checkbox" name="film" value="Film akcji"/>Film akcji<br/>
-	Przykład:<input name="film" >
+	<input type="checkbox" name="film" value="Film akcji"/>Film akcji<br/><br/>
+	Przykład:<input name="film" ><br/><br/>
 	
-	Ulubiony sport?"
+	Ulubiony sport?"<br/>
 	<input type="checkbox" name="sport" value="pilka nozna"/>piłka nożna<br/>
 	<input type="checkbox" name="sport" value="siatkowka"/>siatkówka<br/>
 	<input type="checkbox" name="sport" value="kolarstwo"/>kolarstwo<br/>
 	<input type="checkbox" name="sport" value="koszykowka"/>koszykówka<br/>
-	<input type="checkbox" name="sport" value="pilka reczna"/>piłka ręczna<br/>
-	Inny:<input name="sport"/>
+	<input type="checkbox" name="sport" value="pilka reczna"/>piłka ręczna<br/><br/>
+	Inny:<input name="sport"/><br/><br/>
 	
 	Ulubiona gra?:<br/>
 	<select id="gry" multiple="multiple" size="5">
@@ -68,8 +87,8 @@
 	<option value="Call of Duty">Call of Duty</option>
 	<option value="Rocket League">Rocket League</option>
 	<option value="Rainbow Six">Rainbow Six</option>
-	</select><br/>
-	<input name="gry" >Inne (podaj jakie):<br/>
+	</select><br/><br/>
+	Inne:<input name="gry" ><br/>
 	</form>
 </div>
 <div class="send">
