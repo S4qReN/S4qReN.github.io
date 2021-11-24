@@ -1,32 +1,30 @@
 ﻿<html lang="pl">
-
 <head>
-
 <meta charset="utf-8">
 <title>Formularz</title>
+<style>
 
+</style>
 </head>
 
 <body>
-
-<body bgcolor="76E66E">
-
-<form enctype="text/plain" action="mailto:login@domena.kod?subject=Moja ankieta" method="post">
-	<input name="Imie"> Podaj swoje imię<br>
-	<p>Podaj swoją płeć:</p>
+<form enctype="text/plain" action="mailto:norbiziel@gmail.com?subject=ankieta" method="post">
+	Twoje imię:<input name="Imie"><br/>
+	Twoja płeć:
 	<input type="radio" name="Plec" value="Kobieta">Kobieta
-	<input type="radio" name="Plec" value="Mężczyzna">Mężczyzna<br><br>
-	<input name="data urodzenia"> Podaj swoją datę urodzenia<br>
+	<input type="radio" name="Plec" value="Mężczyzna">Mężczyzna
+<br/><br/>
+	Data urodzenia:<input name="data urodzenia"><br/>
 	
-	<p>Jakie masz hobby? (możesz zaznaczyć więcej możliwości)</p>
-	<input type="checkbox" name="hobby" value="Sport">Sport<br>
-	<input type="checkbox" name="hobby" value="Muzyka">Muzyka<br>
-	<input type="checkbox" name="hobby" value="Ksiazka">Książka<br>
-	<input type="checkbox" name="hobby" value="Kino">Kino<br>
-	<input type="checkbox" name="hobby" value="Gry komputerowe">Gry komputerowe<br>
-	<input name="hobby" >Inne (napisz jakie):<br>
+	Twoje hobby:<br/>
+	<input type="checkbox" name="hobby" value="Sport">Sport<br/>
+	<input type="checkbox" name="hobby" value="Muzyka">Muzyka<br/>
+	<input type="checkbox" name="hobby" value="Ksiazka">Książka<br/>
+	<input type="checkbox" name="hobby" value="Kino">Kino<br/>
+	<input type="checkbox" name="hobby" value="Gry komputerowe">Gry komputerowe<br/>
+	<input name="hobby">Inne:<br/>
 	
-	<p>Jakiej muzyki słuchasz? (możesz zaznaczyć więcej możliwości)</p>
+	Ulubiony typ muzyki?:<br/>
 	<select id="muzyka" multiple="multiple" size="5">
 	<option value="Rock">Rock</option>
 	<option value="Pop">Pop</option>
@@ -34,8 +32,8 @@
 	<option value="Techno">Techno</option>
 	<option value="Reggae">Reggae</option>
 	<option value="Disco">Disco</option>
-	</select>
-	<br><input name="muzyka" >Inna (podaj jaka):<br>
+	</select><br/>
+	Inny:<input name="muzyka">
 	
 	<p>Jakie książki lubisz? (możesz zaznaczyć więcej możliwości)</p>
 	<input type="checkbox" name="ksiazka" value="Kryminal">Kryminał<br>
