@@ -5,4 +5,7 @@ Deny from all
 </FilesMatch>
 
 RewriteEngine on
+RewriteRule home index.html
 RewriteRule league-of-legends lol.html
+RewriteRule youtube youtube.html
+RewriteRule formularz form.html
