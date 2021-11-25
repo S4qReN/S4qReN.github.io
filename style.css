@@ -3,14 +3,14 @@ body
 	margin:0px!important;
 	padding:0px!important;
 	background-color:#030303;
-	color:#2f2f2f;
+	color:#bfbfbf;
 	background-image:url("https://www.mobafire.com/images/champion/square/draven.png");
 	overflow-y:scroll;
 }
 .header
 {
 	height:70px;
-	background-color:#ffffff;
+	background-color:#2f2f2f;
 	width:100%;
 }
 .logo
