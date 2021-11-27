@@ -2,7 +2,7 @@
 Options +FollowSymLinks
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^saqren.ga[nc]
-RewriteRule ^(.*)$ http://www.saqren.ga/$1 [r=301,nc]
+RewriteRule ^(.*)$ https://www.saqren.ga/$1 [r=301,nc]
 
 # 301 Redirect Old File
 Redirect 301 /league-of-legends/index.html /league-of-legends
