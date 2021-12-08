@@ -1,11 +1,15 @@
-### PROTECT FILES ###
-<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
-Order Allow,Deny
-Deny from all
-</FilesMatch>
-
+# Rewrite to www
+Options +FollowSymLinks
 RewriteEngine on
-RewriteRule home index.html
-RewriteRule league-of-legends lol.html
-RewriteRule youtube youtube.html
-RewriteRule formularz form.html
+RewriteCond %{HTTP_HOST} ^saqren.ga[nc]
+RewriteRule ^(.*)$ https://www.saqren.ga/$1 [r=301,nc]
+
+# 301 Redirect Old File
+Redirect 301 /league-of-legends/index.html /league-of-legends
+
+# Prevent viewing of .htaccess file
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
