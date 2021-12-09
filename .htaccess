@@ -1,15 +1,9 @@
-# Rewrite to www
-Options +FollowSymLinks
+### PROTECT FILES ###
+<FilesMatch "\.htaccess|htpasswd|ini|fla|psd|log|sh)$">
+Order Allow,Deny
+</FilesMatch>
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^saqren.ga[nc]
-RewriteRule ^(.*)$ https://www.saqren.ga/$1 [r=301,nc]
-
-# 301 Redirect Old File
-Redirect 301 /league-of-legends/index.html /league-of-legends
-
-# Prevent viewing of .htaccess file
-<Files .htaccess>
-order allow,deny
-deny from all
-</Files>
-
+RewriteRule main-page index.html
+RewriteRule formularz form.html
+RewriteRule pi pi.html
+RewriteRule ziemia ziemia.html
