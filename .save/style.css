@@ -1,0 +1,161 @@
+body
+{
+	margin:0 !important;
+	background-color:#2f2f35;
+	color:#ffffff;
+	font-family: 'Bakbak One', cursive;
+	font-size:20px;
+}
+a:link
+{
+	color:#ffffff;
+	text-decoration: none;
+}
+a:visited
+{
+	color:#ffffff;
+	text-decoration: none;
+}
+a:hover
+{
+	color:#ffffff;
+	text-decoration: none;
+}
+a:active
+{
+	color:#ffffff;
+	text-decoration: none;
+}
+.wrapper
+{
+	width:100%;
+}
+.header
+{
+	background-color:#1f1f25;
+	width:100%;
+	padding:40px 0;
+}
+.logo
+{
+	width:350px;
+	font-size:48px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.nav
+{
+	padding:10px 0;
+	width:100%;
+	background-color:#4f4fc3;
+	text-align:center;
+	border-top:1px solid #1b2175;
+	border-bottom:1px solid #1b2175;
+}
+.content
+{
+	background-color:#1f1f25;
+	width:960px;
+	margin:0 auto;
+	text-align:justify;
+	padding:20px;
+	border-left:1px solid #0f0f0f;
+	border-right:1px solid #0f0f0f;
+}
+.socials
+{
+	width:100%;
+	text-align:center;
+	background-color:#292930;
+}
+.socialdivs
+{
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.social1
+{
+	float:left;
+	width:250px;
+	height:155px;
+}
+.social1:hover
+{
+	background-color:#393939;
+}
+.footer
+{
+	text-align:center;
+	background-color:#222229;
+	padding:30px;
+}
+.sticky
+{
+	width:100%;
+	position:fixed;
+	left:0;
+	top:0;
+	z-index:100;
+}
+ol
+{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	font-size:18px;
+	height:35px;
+	line-height:200%;
+	display: inline-block;
+}
+ol a
+{
+	color:#ffffff;
+	text-decoration:none;
+	display:block;
+}
+ol > li
+{
+	float:left;
+	width:150px;
+	height:40px;
+	border-right:1px dashed #1b1b75;
+}
+ol > li:first-child
+{
+	border-left:1px dashed #1b1b75;
+}
+ol > li:hover
+{
+	background-color:#6969cf;
+}
+ol > li:hover > ul
+	{	display:block;
+}
+ol > li:hover > a
+{
+	color:#171745;
+}
+ol > li > ul
+{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	height:40px;
+	display:none;
+}
+ol > li > ul > li
+{
+	background-color:#6969cf;
+	position:relative;
+	z-index:100;
+	border-top:1px dashed #1b1b75;
+}
+ol > li > ul > li:hover
+{
+	background-color:#4f4fc3;
+}
+ol > li > ul > li:hover > a
+{
+	color:#171745;
+}
