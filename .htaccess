@@ -1,9 +1,0 @@
-### PROTECT FILES ###
-<FilesMatch "\.htaccess|htpasswd|ini|fla|psd|log|sh)$">
-Order Allow,Deny
-</FilesMatch>
-RewriteEngine on
-RewriteRule main-page index.html
-RewriteRule formularz form.html
-RewriteRule pi pi.html
-RewriteRule ziemia ziemia.html
