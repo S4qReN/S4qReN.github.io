@@ -1,0 +1,159 @@
+/*BODY*/
+body{
+	margin:0;
+	font-family:'Saira Extra Condensed',sans-serif;
+	color:#8A8A8A;
+	background-color:#0d0d0d;
+	overflow-x:hidden;
+	font-size:30px;
+}
+div{
+	clear:both;
+}
+a{
+	text-decoration:none;
+	color:#ffffff;
+	cursor: pointer;
+}
+/*HEADER*/
+header{
+	background-color:#000;
+	width:100%;
+	padding:5px 0 0 0;
+	position:fixed;
+	left:0;
+	top:0;
+	z-index:100;
+	font-size:15px;
+	font-weight:700;
+	box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 1);
+}
+nav>h1{
+	font-family:'Audiowide',cursive;
+	padding:10px 0 0 0;
+	float:left;
+	font-size:55px;
+	margin:0;
+}
+iframe{
+	overflow-x:hidden;
+	overflow-y:hidden;
+	display:block;
+}
+.ytvideo{
+	width:560px;
+	height:315px;
+	border:1px solid #1f1f1f;
+}
+.lang{
+	float:right;
+	margin:0 20px 0 0;
+}
+span a{
+	color:#8A8A8A;
+}
+.logo{
+	height:100px;
+	width:100px;
+	float:left;
+	margin:0;
+}
+/*NAVIGATION*/
+nav{
+	background-color:#141414;
+	text-align:center;
+	width:100%;
+	padding:10px 0;
+	font-weight:600;
+	height:90px
+}
+nav a{
+	padding:5px 25px;
+	color:#8a8a8a;
+/*LIST*/
+}
+nav>ol{
+	margin:10 0;
+	padding:10px 0 0 0;
+	list-style-type:none;
+	display:inline-block;
+	font-size:25px;
+	height:35px;
+}
+nav>ol>li{
+	float:left;
+	margin:0 5px;
+}
+nav>ol a{
+	display:block;
+}
+nav>ol > li:hover{
+	background-color:#2f2f2f;
+}
+nav>ol>li a:hover{
+	color:#DF192B;
+}
+nav>ol > li:hover > ul{	
+	display:block;
+	width:100%;
+}
+nav>ol>li>ul{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	display:none;
+}
+nav>ol>li>ul>li{
+	border-top:1px solid #141414;
+}
+/*MAIN*/
+main{
+	margin:140px 50px 0px 50px;
+	color:#fff;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	background-color:#0f0f0f;
+	padding:50px;
+	width:1320px;
+	height:150%;
+	text-align:justify;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+}
+/*BOCZNY PANEL*/
+.socials{
+	display:inline-block;
+	border:1px solid #1b1b1b;
+	padding:10px;
+}
+.git a:hover{
+	color:#f3521e;
+}
+.yt a:hover{
+	color:#ff0000;
+}
+.tw a:hover{
+	color:#9146ff;
+}
+.stm a:hover{
+	color:#47afbf;
+}
+aside{
+	width:350px;
+	float:right;
+	background-color:#0f0f0f;
+	margin:0;
+	padding:15px;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+	text-align:center;
+}
+/*FOOTER*/
+footer{
+	background-color:#141414;
+	width:100%;
+	text-align:center;
+	padding:15px;
+	font-size:15px;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+}
